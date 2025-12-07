@@ -1,7 +1,7 @@
 # RecycleVision: Automated Waste Classification using EfficientNet
 ![Project Status](https://img.shields.io/badge/Project_Status-Completed-brightgreen.svg)
-![Model](https://img.shields.io/badge/Model-EfficientNetB0-blue.svg)
-![Environment](https://img.shields.io/badge/Environment-Kaggle-orange.svg)
+![Model](https://img.shields.io/badge/Model-EfficientNetB0-orange.svg)
+![Environment](https://img.shields.io/badge/Tool-Kaggle-blue.svg)
 ![Framework](https://img.shields.io/badge/Framework-TensorFlow_|_Keras-yellow.svg)
 ![Method](https://img.shields.io/badge/Method-Transfer_Learning-red.svg)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)
