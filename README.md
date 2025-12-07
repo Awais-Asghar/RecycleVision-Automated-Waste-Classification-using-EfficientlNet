@@ -5,7 +5,6 @@
 ![Language](https://img.shields.io/badge/Language-Python-blue.svg)
 ![Framework](https://img.shields.io/badge/Framework-TensorFlow_|_Keras-yellow.svg)
 ![Method](https://img.shields.io/badge/Method-Transfer_Learning-red.svg)
-![DeepLearning](https://img.shields.io/badge/Deep_Learning-Enabled-purple.svg)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)
 
 Manual waste sorting is slow, boring, and error prone. Recycling bins are often filled with mixed waste, so a lot of potentially recyclable material ends up in landfills. RecycleVision is a deep learning based image classifier that can automatically identify different types of waste from images. Using transfer learning with EfficientNetB0, the system learns rich visual features and classifies images into multiple waste categories. This model is the “brain” that can later be deployed on an embedded device or robotic arm to perform automatic, real-time waste segregation, making recycling cheaper, faster, and more reliable. 
