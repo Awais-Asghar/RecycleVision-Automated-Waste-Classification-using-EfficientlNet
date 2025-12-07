@@ -182,7 +182,7 @@ All splits preserve class ratios using stratified sampling.
 
 ---
 
-## 6. Key Technical Terms (Quick Glossary)
+## 6. Key Technical Terms
 
 * **Transfer Learning**
   Using a model pre-trained on a large dataset (ImageNet) and adapting it to a new but related problem.
