@@ -1,4 +1,4 @@
-# RecycleVision: Automated Waste Classification using EfficientNet
+# RecycleVision: Automated Waste Classification
 ![Project Status](https://img.shields.io/badge/Project_Status-Completed-brightgreen.svg)
 ![Model](https://img.shields.io/badge/Model-EfficientNetB0-orange.svg)
 ![Environment](https://img.shields.io/badge/Tool-Kaggle-blue.svg)
