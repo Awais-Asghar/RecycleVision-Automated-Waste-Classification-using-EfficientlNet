@@ -8,6 +8,12 @@
 
 Manual waste sorting is slow, boring, and error prone. Recycling bins are often filled with mixed waste, so a lot of potentially recyclable material ends up in landfills. RecycleVision is a deep learning based image classifier that can automatically identify different types of waste from images. Using transfer learning with EfficientNetB0, the system learns rich visual features and classifies images into multiple waste categories. This model is the “brain” that can later be deployed on an embedded device or robotic arm to perform automatic, real-time waste segregation, making recycling cheaper, faster, and more reliable. 
 
+<img width="1876" height="1014" alt="Image" src="https://github.com/user-attachments/assets/836a5438-fed6-45a2-829e-138063d2ccfb" />
+
+<img width="1880" height="1015" alt="Image" src="https://github.com/user-attachments/assets/cd0cb613-855e-4eda-b8ef-0b54d2d30a3a" />
+
+<img width="1872" height="1018" alt="Image" src="https://github.com/user-attachments/assets/51ff27ba-1790-4046-bbed-1f0acfce4dd0" />
+
 ---
 
 ## 1. Problem Statement & Motivation
@@ -26,6 +32,8 @@ Given an image of a waste item, predict its correct category (cardboard, glass, 
 
 Design, implement, and evaluate a deep learning model using EfficientNetB0 and Keras/TensorFlow to classify waste images with high accuracy, while keeping the solution lightweight enough for future deployment on resource-constrained hardware. 
 
+<img width="1875" height="1007" alt="Image" src="https://github.com/user-attachments/assets/89996fd7-64c6-421c-8dbb-0f3b102c0be3" />
+
 ---
 
 ## 2. Dataset Description
@@ -42,6 +50,8 @@ Design, implement, and evaluate a deep learning model using EfficientNetB0 and K
 * Paper
 * Plastic
 * Trash
+
+<img width="1875" height="1012" alt="Image" src="https://github.com/user-attachments/assets/9629c99b-b164-413e-9b88-c70bda2ebdb0" />
 
 **Data Characteristics**
 
@@ -66,9 +76,13 @@ To increase robustness and reduce overfitting:
 
 This is implemented using `ImageDataGenerator` for training, with only rescaling for validation and test sets. 
 
+<img width="1864" height="1011" alt="Image" src="https://github.com/user-attachments/assets/16a82c00-ecae-4359-a910-0d492758ecc0" />
+
 ---
 
 ## 3. Model Architecture (EfficientNetB0 Transfer Learning)
+
+<img width="1874" height="1011" alt="Image" src="https://github.com/user-attachments/assets/759fb2ad-47b8-4ce2-ad84-862b8634a0ec" />
 
 **High-Level Idea**
 
@@ -121,15 +135,21 @@ All splits preserve class ratios using stratified sampling.
 * Recall ≈ 0.92
 * Macro F1-Score ≈ 0.93
 
+<img width="1870" height="1003" alt="Image" src="https://github.com/user-attachments/assets/1e7cf930-cefe-48a9-aedf-d4b06738e7ea" />
+
+<img width="1874" height="1005" alt="Image" src="https://github.com/user-attachments/assets/bfd2b83f-719f-4578-ba4b-0e9a84b4f487" />
+
 **Confusion Matrix Insights**
 
 * Most classes are classified correctly with high support.
 * Main confusion happens between visually similar materials such as clear plastic vs glass.
 * The confusion matrix on page 11 shows strong diagonal dominance, which confirms overall good performance. 
 
+<img width="1867" height="1009" alt="Image" src="https://github.com/user-attachments/assets/ca2e3917-7c60-4b2e-8823-59a55be77e97" />
+
 ---
 
-## 5. System Pipeline (For a Slide Diagram)
+## 5. System Pipeline
 
 1. **Image input**
 
@@ -179,6 +199,12 @@ All splits preserve class ratios using stratified sampling.
 * Fine-tune upper layers of EfficientNetB0 on this dataset.
 * Use object detection models (for example YOLO) to handle multiple waste items per frame.
 * Integrate with hardware (embedded controller / robotic arm) for real-time sorting in a lab prototype. 
+
+<img width="1869" height="983" alt="Image" src="https://github.com/user-attachments/assets/b2fceb00-efdf-4520-a520-66cc1a6358c6" />
+
+<img width="1867" height="996" alt="Image" src="https://github.com/user-attachments/assets/cbe32887-7e33-490a-a7e0-126a568c354d" />
+
+<img width="1866" height="992" alt="Image" src="https://github.com/user-attachments/assets/4e162ea8-0b1d-4bb8-a380-b1ca60b8b2de" />
 
 ---
 
